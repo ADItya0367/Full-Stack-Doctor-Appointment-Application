@@ -11,7 +11,7 @@ Features
 >Responsive design for both desktop and mobile devices.
 
 Technologies Used
->Frontend: React.js, Tailwind CSS
+>Frontend: React.js, Tailwind CSS, Redux, Ant Design
 >Backend: Node.js, Express.js
 >Database: MongoDB
 >Authentication: JWT (JSON Web Tokens)
@@ -22,5 +22,3 @@ ERD Diagram:
 ![erd](ERD.png)
 
 
-
-"Introducing our comprehensive doctor appointment app, built with cutting-edge technologies like React.js, Redux, Node.js, Ant Design, and Express.js. 
