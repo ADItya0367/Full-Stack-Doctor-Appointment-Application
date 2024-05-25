@@ -1,0 +1,109 @@
+.hel{
+    background-color: #0f2030;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #C7B7A3;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s;
+    height: 500px;
+    margin-left: 30px;
+}
+.first_cont{
+  margin-left: 90px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #c4bcb3;
+    height: 380px;
+    border-style: solid;
+    
+}
+.second_cont{
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 450px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #ffffff00;
+    height: 380px;
+}
+.butt{
+  background-color: #c4bcb3;
+  color: #495057;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+  border-color: #495057 ;
+  
+}
+.text{
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #000000;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s;
+ 
+}
+.tex{
+  text-align: left;
+}
+.back{
+  background-color: #c4bcb3;
+  padding: 4px;
+  border-radius: 2px;
+}
+.city_{
+  width: 60%;
+}
+.state_{
+ padding-left: 20px;
+}
+.ani{
+  animation: fadeIn 2s;
+ 
+  
+}
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.city__{
+margin-right: 100px;
+}
+.city___{
+padding-right: 100px;
+  }
+  .padd{
+    margin-right: 110px;
+  }
+
+  .lot{
+    margin-left: 70px;
+  }
+  .check{
+    margin-left: 30px;
+  }
+  .forgot{
+    margin-top: 20px;
+  }
