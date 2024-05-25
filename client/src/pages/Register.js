@@ -13,8 +13,8 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { DateField } from '@mui/x-date-pickers';
-import { DatePicker } from "@mui/x-date-pickers";
+
+
 
 
 function Copyright(props) {
@@ -113,12 +113,7 @@ export default function Register() {
                 </FormControl>
               </Grid>
 
-              <Grid item xs={12}>
-              
-              <DatePicker label="Basic date picker" />
-
-               
-              </Grid>
+            
               <Grid item xs={12}>
                 <TextField
                   required
