@@ -14,18 +14,30 @@
     cursor: pointer;
     transition: all 0.3s;
     height: 500px;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 .first_cont{
-  margin-left: 90px;
-    display: flex;
+  margin-left: 6px;
+    
     justify-content: space-between;
     border-radius: 10px;
     align-items: center;
     background-color: #c4bcb3;
     height: 380px;
     border-style: solid;
+    padding: 28px;
     
+}
+.firstt_cont{
+
+    border-radius: 10px;
+    align-items: center;
+    background-color: #c4bcb3;
+    height: 380px;
+    border-style: solid;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 30px;
 }
 .second_cont{
   position: absolute;
@@ -36,7 +48,7 @@
     border-radius: 10px;
     align-items: center;
     background-color: #ffffff00;
-    height: 380px;
+    height: 440px;
 }
 .butt{
   background-color: #c4bcb3;
@@ -52,6 +64,7 @@
   
 }
 .text{
+  font-family: caudex;
   text-align: center;
   justify-content: center;
   font-weight: 500;
@@ -99,11 +112,51 @@ padding-right: 100px;
   }
 
   .lot{
-    margin-left: 70px;
+    position: absolute;
+    height: 500px;
+    margin-right: -140px;
+    margin-left: 90px;
+    margin-top: 140px;
+
+  }
+  .lot2{
+    position: absolute;
+    height: 500px;
+    margin-top: -100px;
   }
   .check{
     margin-left: 30px;
   }
   .forgot{
+    margin-top: 3px;
+  }
+  .below_text{
+    font-size: small;
+    font-style: normal;
+    font-family: caudex;
+  }
+  .below_text:hover{
+    color: #0f2030;
+  }
+  .below__text{
+    font-size: large;
+    font-style: normal;
+    font-family: caudex;
     margin-top: 20px;
   }
+
+  .img{
+    position: absolute;
+    margin-left: 20px;
+    height: 260px;
+    width: 260px;
+    margin-bottom: 140px;
+  }
+ .imgg{
+    position: absolute;
+    margin-bottom: 240px;
+    margin-left: 860px;
+    height: 260px;
+    width: 260px;
+   
+ }

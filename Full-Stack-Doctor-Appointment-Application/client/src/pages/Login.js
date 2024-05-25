@@ -1,25 +1,23 @@
 import React from 'react';
-import Particles from 'react-particles';
-import doc from '../doc.json';
+import first from '../first.json';
 import Lottie from 'lottie-react';
-
+import second from '../second.png';
 function Login() {
   return (
     <div className='container row hel'>
       
-       
-     
        <div className='col-6 first_cont text '>
        <form>
        
-        <h3 className='sign'>Login </h3>
+       
         
         <div className="mb-3">
           <label>Email address</label>
           <input
             type="email"
-            className="form-control"
+            className="form-control "
             placeholder="Enter email"
+            onfocus="(backgroundColor='black')"
           />
         </div>
         <div className="mb-3 ">
@@ -30,19 +28,7 @@ function Login() {
             placeholder="Enter password"
           />
         </div>
-        <Particles 
-        params={{ 
-          particles: { 
-            number: { 
-              value: 200, 
-              density: { 
-                enable: true, 
-                value_area: 1000, 
-              } 
-            }, 
-          }, 
-        }} 
-      /> 
+        
         <div className="mb-3 ">
           <div className="custom-control custom-checkbox ">
             <input
@@ -60,14 +46,17 @@ function Login() {
             Submit
           </button>
         </div>
-        <p className="forgot-password text-right forgot ">
+        <p className="forgot-password text-right forgot below__text ">
           Forgot <a href="#">password?</a>
+        </p>
+        <p className="forgot-password below_text ">
+          Don't Have an Account ? <a href="./register">Register Now</a>
         </p>
       </form>
        </div>
-       
+       <img src={second} className='imgg'/>
      <div className='col-5 second_cont'>
-      <Lottie class="lot" loop={true} animationData={doc} />
+      <Lottie class="lot" loop={true} animationData={first} />
      </div>
     </div>
     
