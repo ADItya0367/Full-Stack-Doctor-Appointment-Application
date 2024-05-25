@@ -12,9 +12,13 @@ Features
 
 Technologies Used
 >Frontend: React.js, Tailwind CSS, Redux, Ant Design
+>
 >Backend: Node.js, Express.js
+>
 >Database: MongoDB
+>
 >Authentication: JWT (JSON Web Tokens)
+>
 >Password Hashing: bcrypt
 
 ERD Diagram:
