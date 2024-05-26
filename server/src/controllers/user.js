@@ -31,11 +31,8 @@ module.exports = {
     },
 
     read: async (req, res) => {
-       
-        const customFilters = req.user?.isAdmin ? { _id: req.params.id } : { _id: req.user._id }
-
         // const data = await User.findOne({ _id: req.params.id })
-        const data = await User.findOne(customFilters)
+        const data = await User.findOne(req.params._id)
 
         res.status(200).send({
             error: false,
