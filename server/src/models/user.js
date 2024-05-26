@@ -17,17 +17,17 @@ const { mongoose } = require('../configs/dbConnection')
 //         isActive: true
 //     },
 //     {
-//         username: 'user2',
-//         password: 'password2',
-//         email: 'user2@example.com',
-//         phoneNumber: 1234567891,
-//         firstName: 'FirstName2',
-//         lastName: 'LastName2',
-//         dateOfBirth: new Date('1991-02-02'),
-//         gender: 'Female',
-//         medicalHistory: ['Diabetes'],
-//         address: 'Address2',
-//         isActive: true
+        // username: 'user2',
+        // password: 'password2',
+        // email: 'user2@example.com',
+        // phoneNumber: 1234567891,
+        // firstName: 'FirstName2',
+        // lastName: 'LastName2',
+        // dateOfBirth: new Date('1991-02-02'),
+        // gender: 'Female',
+        // medicalHistory: ['Diabetes'],
+        // address: 'Address2',
+        // isActive: true
 //     },
 //     {
 //         username: 'user10',
@@ -73,6 +73,12 @@ const UserSchema = new mongoose.Schema({
         // validate: ... // validasyon işlemini pre(save) yapıyor.
     },
 
+    isAdmin:{
+        type:Boolean,
+        required:true,
+        default:false
+    },
+
     phoneNumber:{
         type: Number
     },
@@ -80,33 +86,33 @@ const UserSchema = new mongoose.Schema({
     firstName: {
         type: String,
         trim: true,
-        required: true
+      
     },
 
     lastName: {
         type: String,
         trim: true,
-        required: true
+      
     },
 
     dateOfBirth:{
         type:Date,
-        required:true
+      
     },
 
     gender:{
         type: String,
-        required:true
+        
     },
 
     medicalHistory:{
         type:[String],
-        trim:True
+        trim: true,
     },
 
     address:{
         type:String,
-        trim:True
+        trim:true
     },
 
     isActive: {

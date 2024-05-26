@@ -17,6 +17,17 @@ dbConnection()
 // errorHandler:
 app.use(require('./src/middlewares/errorHandler'))
 
+// res.getModelList():
+app.use(require('./src/middlewares/findSearchSortPage'))
+
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json())
+
+// routes:
+
+app.use('/',require('./src/routes'))
+
 // RUN SERVER:
 
 const HOST = process.env?.HOST || '127.0.0.1'
