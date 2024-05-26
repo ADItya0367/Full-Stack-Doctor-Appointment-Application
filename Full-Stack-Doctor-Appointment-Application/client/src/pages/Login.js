@@ -3,14 +3,17 @@ import first from '../first.json';
 import Lottie from 'lottie-react';
 import second from '../second.png';
 function Login() {
+
+ const onFinish = (values) => {
+    console.log('Success:', values);
+ }
+
+
   return (
     <div className='container row hel'>
       
        <div className='col-6 first_cont text '>
-       <form>
-       
-       
-        
+       <form onFinish={onFinish}>
         <div className="mb-3">
           <label>Email address</label>
           <input
