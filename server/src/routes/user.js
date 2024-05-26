@@ -7,6 +7,9 @@ const user = require('../controllers/user')
 
 // URL: /users
 
+router.post('/login', user.login)
+router.all('/logout', user.logout)
+
 router.route('/')
     .get(user.list)
     .post(user.create)

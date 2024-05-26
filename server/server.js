@@ -14,6 +14,13 @@ require('express-async-errors')
 const { dbConnection } = require('./src/configs/dbConnection')
 dbConnection()
 
+// SessionCookies:
+// http://expressjs.com/en/resources/middleware/cookie-session.html
+// https://www.npmjs.com/package/cookie-session
+//* $ npm i cookie-session
+const session = require("cookie-session")
+app.use(session({ secret: process.env.SECRET_KEY || 'secret_keys_for_cookies' }))
+
 // errorHandler:
 app.use(require('./src/middlewares/errorHandler'))
 
