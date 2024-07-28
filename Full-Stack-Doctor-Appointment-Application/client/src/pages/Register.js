@@ -1,27 +1,40 @@
 import React from 'react';
-import reg from '../reg.json';
-import Lottie from 'lottie-react';
 import  rem from '../rem.png';
-function Login() {
+import axios from 'axios';
+import toast from 'react-hot-toast';
+import { Link, useNavigate } from 'react-router-dom';
+function Register() {
+  const navigate = useNavigate();
+   const onFinish =async(values)=>{
+    try {
+      const response = await axios.post('http://localhost:5000/api/user/register',values);
+      if(response.data.success){
+        toast.success(response.data.message)
+        toast.success('Register Successfully')
+        navigate('/login')}
+        else{
+          toast.error(response.data.message)
+        }
+    } catch (error) {
+      toast.error('Something went wrong')
+    }
+
+   }
   return (
-    <div className='container row hel'>
+    <div className='container hel'>
+      <div className='col-4'>
       <img src={rem} className='img'/>
-      <div className='col-6'>
+      </div>
       
-      <Lottie class="lot2" loop={true} animationData={reg} />
-     </div>
-       <div className='col-6  text firstt_cont'>
-       <form>
-       
-       
-       
+       <div className='col-8  text firstt_cont' onfinish={onFinish}>
+     
        <div className="mb-3">
          <label>Email address</label>
          <input
            type="email"
            className="form-control "
            placeholder="Enter email"
-           onfocus="(backgroundColor='black')"
+           
          />
        </div>
        <div className="mb-3 ">
@@ -46,15 +59,17 @@ function Login() {
          </div>
        </div>
        <div className="d-grid ">
-         <button type="submit" className="btn btn-dark">
+         <button type="submit" className="btn btn-dark" htmlType="submit">
            Submit
          </button>
        </div>
        <p className="forgot-password text-right forgot below__text ">
-         Have an Account ? <a href="./login">Login Now</a>
+         Have an Account ? <Link to = "/login"> 
+   Login Now
+</Link>
        </p>
       
-     </form>
+     
       </div>
       
        
@@ -65,4 +80,4 @@ function Login() {
   );
 } 
 
-export default Login;
+export default Register;

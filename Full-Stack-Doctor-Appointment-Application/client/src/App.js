@@ -1,4 +1,5 @@
 import React from "react";
+
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -6,10 +7,12 @@ import Home from "./pages/Home";
 import ApplyDoctor from "./pages/ApplyDoctor";
 import Appointments from "./pages/Appointments";
 import Profiles from "./pages/Profiles";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <BrowserRouter>
+    <Toaster position="top-center" reverseOrder={false}/>
     <Routes>
       <Route path="/" element={<Register />} />
       <Route path="/login" element={<Login />} />

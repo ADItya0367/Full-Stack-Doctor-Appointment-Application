@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "lottie-react": "^2.4.0",
+    "axios": "^1.7.2",
     "mdb-react-ui-kit": "^8.0.0",
     "react": "^18.3.1",
-    "react-router-dom": "^6.2.1",
-    "react-particles": "^0.6.0",
     "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.1",
-    "lottie-react-web": "^2.4.0",
+    "react-toolkit": "^2.0.0-alpha.6",
+    "redux": "^5.0.1",
+    "redux-toolkit": "^1.1.2",
+    "three": "^0.164.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,5 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }

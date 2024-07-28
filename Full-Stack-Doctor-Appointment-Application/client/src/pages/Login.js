@@ -1,11 +1,22 @@
 import React from 'react';
-import first from '../first.json';
-import Lottie from 'lottie-react';
-import second from '../second.png';
+
+
+import toast from 'react-hot-toast';
+
+import { response } from 'express';
+
 function Login() {
 
- const onFinish = (values) => {
-    console.log('Success:', values);
+ const onFinish = async(values) => {
+  
+    try {
+      toast.success('Login Successfully');
+      toast.success("Redirectiing to home page");
+      localStorage.setItem('token',response.data.token);
+      
+    } catch (error) {
+      toast.error('Something went wrong');
+    }
  }
 
 
@@ -13,7 +24,7 @@ function Login() {
     <div className='container row hel'>
       
        <div className='col-6 first_cont text '>
-       <form onFinish={onFinish}>
+       <form onfinish={onFinish}>
         <div className="mb-3">
           <label>Email address</label>
           <input
@@ -57,9 +68,9 @@ function Login() {
         </p>
       </form>
        </div>
-       <img src={second} className='imgg'/>
-     <div className='col-5 second_cont'>
-      <Lottie class="lot" loop={true} animationData={first} />
+      
+     <div className='col-5'>
+        <img className="imag" src='https://www.thewmch.com/wp-content/uploads/2023/02/female-doctor-using-her-digital-tablet-free-vector.jpg' alt='doctorimage' />
      </div>
     </div>
     
